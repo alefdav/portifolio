@@ -1,0 +1,196 @@
+# BEGIN W3TC Browser Cache
+<IfModule mod_mime.c>
+    AddType text/css .css
+    AddType text/x-component .htc
+    AddType application/x-javascript .js
+    AddType application/javascript .js2
+    AddType text/javascript .js3
+    AddType text/x-js .js4
+    AddType text/html .html .htm
+    AddType text/richtext .rtf .rtx
+    AddType image/svg+xml .svg
+    AddType text/plain .txt
+    AddType text/xsd .xsd
+    AddType text/xsl .xsl
+    AddType text/xml .xml
+    AddType video/asf .asf .asx .wax .wmv .wmx
+    AddType video/avi .avi
+    AddType image/bmp .bmp
+    AddType application/java .class
+    AddType video/divx .divx
+    AddType application/msword .doc .docx
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-msdownload .exe
+    AddType image/gif .gif
+    AddType application/x-gzip .gz .gzip
+    AddType image/x-icon .ico
+    AddType image/jpeg .jpg .jpeg .jpe
+    AddType image/webp .webp
+    AddType application/json .json
+    AddType application/vnd.ms-access .mdb
+    AddType audio/midi .mid .midi
+    AddType video/quicktime .mov .qt
+    AddType audio/mpeg .mp3 .m4a
+    AddType video/mp4 .mp4 .m4v
+    AddType video/mpeg .mpeg .mpg .mpe
+    AddType application/vnd.ms-project .mpp
+    AddType application/x-font-otf .otf
+    AddType application/vnd.ms-opentype ._otf
+    AddType application/vnd.oasis.opendocument.database .odb
+    AddType application/vnd.oasis.opendocument.chart .odc
+    AddType application/vnd.oasis.opendocument.formula .odf
+    AddType application/vnd.oasis.opendocument.graphics .odg
+    AddType application/vnd.oasis.opendocument.presentation .odp
+    AddType application/vnd.oasis.opendocument.spreadsheet .ods
+    AddType application/vnd.oasis.opendocument.text .odt
+    AddType audio/ogg .ogg
+    AddType application/pdf .pdf
+    AddType image/png .png
+    AddType application/vnd.ms-powerpoint .pot .pps .ppt .pptx
+    AddType audio/x-realaudio .ra .ram
+    AddType image/svg+xml .svg .svgz
+    AddType application/x-shockwave-flash .swf
+    AddType application/x-tar .tar
+    AddType image/tiff .tif .tiff
+    AddType application/x-font-ttf .ttf .ttc
+    AddType application/vnd.ms-opentype ._ttf
+    AddType audio/wav .wav
+    AddType audio/wma .wma
+    AddType application/vnd.ms-write .wri
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    AddType application/vnd.ms-excel .xla .xls .xlsx .xlt .xlw
+    AddType application/zip .zip
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On 
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresDefault "access plus 2 days" 
+</IfModule>
+<FilesMatch "\.(css|htc|less|js|js2|js3|js4|CSS|HTC|LESS|JS|JS2|JS3|JS4)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.5.2"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(html|htm|rtf|rtx|svg|txt|xsd|xsl|xml|HTML|HTM|RTF|RTX|SVG|TXT|XSD|XSL|XML)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.5.2"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(asf|asx|wax|wmv|wmx|avi|bmp|class|divx|doc|docx|eot|exe|gif|gz|gzip|ico|jpg|jpeg|jpe|webp|json|mdb|mid|midi|mov|qt|mp3|m4a|mp4|m4v|mpeg|mpg|mpe|mpp|otf|_otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|png|pot|pps|ppt|pptx|ra|ram|svg|svgz|swf|tar|tif|tiff|ttf|ttc|_ttf|wav|wma|wri|woff|woff2|xla|xls|xlsx|xlt|xlw|zip|ASF|ASX|WAX|WMV|WMX|AVI|BMP|CLASS|DIVX|DOC|DOCX|EOT|EXE|GIF|GZ|GZIP|ICO|JPG|JPEG|JPE|WEBP|JSON|MDB|MID|MIDI|MOV|QT|MP3|M4A|MP4|M4V|MPEG|MPG|MPE|MPP|OTF|_OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|PNG|POT|PPS|PPT|PPTX|RA|RAM|SVG|SVGZ|SWF|TAR|TIF|TIFF|TTF|TTC|_TTF|WAV|WMA|WRI|WOFF|WOFF2|XLA|XLS|XLSX|XLT|XLW|ZIP)$">
+    FileETag MTime Size
+    <IfModule mod_headers.c>
+        Header set Pragma "public"
+        Header append Cache-Control "public"
+         Header set X-Powered-By "W3 Total Cache/0.9.5.2"
+    </IfModule>
+</FilesMatch>
+<FilesMatch "\.(bmp|class|doc|docx|eot|exe|ico|webp|json|mdb|mpp|otf|_otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|pot|pps|ppt|pptx|svg|svgz|swf|tif|tiff|ttf|ttc|_ttf|wav|wri|woff|woff2|xla|xls|xlsx|xlt|xlw|BMP|CLASS|DOC|DOCX|EOT|EXE|ICO|WEBP|JSON|MDB|MPP|OTF|_OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|POT|PPS|PPT|PPTX|SVG|SVGZ|SWF|TIF|TIFF|TTF|TTC|_TTF|WAV|WRI|WOFF|WOFF2|XLA|XLS|XLSX|XLT|XLW)$">
+    <IfModule mod_headers.c>
+         Header unset Last-Modified
+    </IfModule>
+</FilesMatch>
+# END W3TC Browser Cache
+# BEGIN W3TC CDN
+<FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+</FilesMatch>
+# END W3TC CDN
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+AddType 'text/html; charset=UTF-8' html
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+    #The following line is enough for .js and .css
+    AddOutputFilter DEFLATE js css
+
+    #The following line also enables compression by file content type, for the following list of Content-Type:s
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml
+
+    #The following lines are to avoid bugs with some browsers
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html 
+</IfModule>
+
+SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+Deny from env=block_bad_bots
+
+### Protect .git 
+RedirectMatch 404 /\.git
+
+### Prevent sftp-config.json from being loaded:
+<files sftp-config.json>
+    order allow,deny
+    deny from all
+</files>
+
+### Protect .htaccess
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+    satisfy all
+</Files>
+
+### Prevent directory browsing
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+### Prevent this .htaccess from being accessed:
+<files .htaccess>
+    order allow,deny
+    deny from all
+</files>
+
+### Prevent WordPress' readme.html from being accessed (as it contains the version number)
+<files readme.html>
+Deny from all
+</files>
+
+### Block access to hidden files & directories
+<IfModule mod_rewrite.c>
+    RewriteCond %{SCRIPT_FILENAME} -d [OR]
+    RewriteCond %{SCRIPT_FILENAME} -f
+    RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+### Block access to source files
+<FilesMatch "(^#.*#|\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|sw[op])|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>

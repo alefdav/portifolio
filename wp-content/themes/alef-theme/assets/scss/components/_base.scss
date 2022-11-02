@@ -1,0 +1,57 @@
+html,
+body {
+  font-size: $font-base + px;
+  font-family: $font-family;
+  line-height: 1.5em;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: 'gobold_bold';
+}
+
+body {
+  position: relative;
+
+  &.page-template-termos-de-uso{
+    overflow-x: unset;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5em;
+  font-family: 'gobold_bold';
+}
+
+h2 {
+  font-size: rem(56);
+  font-weight: 700;
+  color: #002656;
+}
+
+p {
+  line-height: 1.5em;
+  font-family: 'gobold_bold';
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
