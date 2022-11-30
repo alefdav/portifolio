@@ -5,7 +5,7 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -23,18 +23,22 @@ h4,
 h5,
 h6 {
   line-height: 1.5em;
-  font-family: 'Roboto', sans-serif;
 }
 
 p {
   line-height: 1.5em;
-  font-family: 'Roboto', sans-serif;
 }
 
 a{
   text-decoration: none;
   cursor: pointer;
   color: white;
+}
+
+a:hover, ul li:hover{
+  color: #4c6275;
+  transition: 0.3s;
+
 }
 
 img {

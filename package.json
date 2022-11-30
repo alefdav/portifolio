@@ -1,14 +1,13 @@
 {
-  "name": "pullup-wordpress-theme",
+  "name": "alef-wordpress-theme",
   "version": "1.0.0",
-  "description": "Pullup Main Theme",
+  "description": "alef Main Theme",
   "scripts": {
     "dev": "webpack --open --config webpack.dev.js",
     "prod": "webpack --config webpack.prod.js"
   },
   "repository": {
-    "type": "git",
-    "url": "https://gitlab.com/pulluptecnologia/temas/pullup-wordpress-theme.git"
+    "type": "git"    
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +28,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.10.2",
     "jquery": "^3.6.0",
     "jquery-mask-plugin": "^1.14.16",
     "node-sass": "^4.14.1",

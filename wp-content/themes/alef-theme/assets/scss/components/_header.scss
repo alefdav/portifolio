@@ -15,8 +15,9 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    .logoBar {
-      cursor: pointer;
+    a{
+      font-size: 20px;
+      font-weight: 500;
     }
 
     .navigationBar {
@@ -27,14 +28,16 @@ header {
       }
       ul li {
         list-style-type: none;
-        padding: 0 10px;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0 20px;
         cursor: pointer;
       }
     }
   }
 
   .bannerHeader {
-    height: 90vh;
+    height: 70vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -43,10 +46,13 @@ header {
         color: white;
 
         h2{
-            font-size: 45px;
+            font-size: 70px;
+            font-weight: 900;
         }
         p{
             font-size: 18px;
+            font-weight: 500;
+            width: 60%;
         }
 
         button{
@@ -55,7 +61,7 @@ header {
             background-color: bisque;
             color: black;
             padding: 10px 20px;
-            margin-right: 30px;
+            margin-right: 10px;
             box-shadow: -3px 6px #4c6275;
         }
         button:hover{
@@ -65,6 +71,32 @@ header {
             box-shadow: none;
         }
 
+        .bannerHeaderButton{
+          display: flex;
+          flex-direction: row;
+          width: 70%;
+
+          button{
+            
+          }
+          a{
+            margin: auto 0
+          }
+        }
+
+    }
+  }
+
+  .socialMedias{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a{
+      padding: 0 15px;
+      
+      font-size: 50px;
     }
   }
 }

@@ -51,6 +51,7 @@ header('Content-Type: text/html; charset=utf-8');
 
   <link rel="manifest" href="<?php bloginfo('template_url') ?>/manifest.json">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <?php wp_head(); ?>
@@ -62,40 +63,47 @@ header('Content-Type: text/html; charset=utf-8');
   <header>
 
     <section class="headerBar container">
-      <div class="logoBar">Logo</div>
+      <a href="https://www.linkedin.com/in/alefdav/">@alefdav</a>
 
       <div class="navigationBar">
         <ul>
           <li>Home</li>
-          <li>Clientes</li>
-          <li>Contato</li>
+          <li>Projects</li>
+          <li>Contact</li>
         </ul>
-      </div>
-
-      <div class="socialMedias">
-        <a href="">Insta</a>
-        <a href="">Github</a>
-        <a href="">Linkedin</a>
       </div>
     </section>
 
     <section class="bannerHeader container">
       <div class="bannerHeaderContent">
 
-        <h2>Alef David</h2>
-        <p>Sou desenvolvedor Front-End, moro no Brasil.<br>
-          Ajudo pessoas e empresas a darem forma a seus projetos e ideias.
-        </p>
-        <div>
-          <button class="buttonBannerHeader">Vamos conversar</button>
-          <a href="" class="linkBannerHeader">Portifólio</a>
+        <h2>Hi! I'm Alef David</h2>
+        <p> I have been working as a developer for 5 years, my specialty is creating responsive and accessible pages.
+          I have extensive experience with web development and its tools. My favorite stack is Javascript, PHP and its frameworks.</p>
+        <div class="bannerHeaderButton">
+          <button>Check my projects</button>
+          <a href="">..or see my resume</a>
         </div>
-
       </div>
 
       <div class="bannerHeaderImage">
 
       </div>
+    </section>
+
+    <section class="socialMedias">
+
+      <a href="https://www.linkedin.com/in/alefdav/" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://www.github.com/alefdav/" target="_blank">
+        <i class="bi bi-github"></i>
+      </a>
+
+      <a href="https://wa.me/5521967106432" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+      </a>
+
     </section>
 
   </header>
