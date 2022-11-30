@@ -1,0 +1,17 @@
+@import "bootstrap/bootstrap";
+
+/* BASE */
+@import "base/variaveis";
+@import "base/mixins";
+@import "base/sprite";
+@import "base/extend";
+
+/* COMPONENTS */
+@import "components/tipografia";
+@import "components/base";
+@import "components/header";
+@import "components/footer";
+
+/* PAGINAS */
+@import "pages/404";
+@import "pages/home"; 

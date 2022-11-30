@@ -1,7 +1,5 @@
 <?php
 header('Content-Type: text/html; charset=utf-8');
-
-$coricone = '#391B18';
 ?>
 <!doctype html>
 <html lang="pt">
@@ -55,33 +53,49 @@ $coricone = '#391B18';
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- <link href="http://fonts.cdnfonts.com/css/helvetica-neue-lt-std-55" rel="stylesheet"> -->
-
   <?php wp_head(); ?>
-
-  <style>
-    @font-face {
-      font-family: 'gobold_bold';
-      src: url('<?php bloginfo('template_url') ?>/assets/fonts/gobold_bold-webfont.woff') format('woff'),
-        url('<?php bloginfo('template_url') ?>/assets/fonts/gobold_bold-webfont.woff2') format('woff2');
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @font-face {
-      font-family: 'gobold_thin';
-      src: url('<?php bloginfo('template_url') ?>/assets/fonts/gobold_thin-webfont.woff2') format('woff2'),
-        url('<?php bloginfo('template_url') ?>/assets/fonts/gobold_thin-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-
-    }
-  </style>
 
 </head>
 
 <body <?php body_class(); ?>>
 
-  <header class="header ">
-    
+  <header>
+
+    <section class="headerBar container">
+      <div class="logoBar">Logo</div>
+
+      <div class="navigationBar">
+        <ul>
+          <li>Home</li>
+          <li>Clientes</li>
+          <li>Contato</li>
+        </ul>
+      </div>
+
+      <div class="socialMedias">
+        <a href="">Insta</a>
+        <a href="">Github</a>
+        <a href="">Linkedin</a>
+      </div>
+    </section>
+
+    <section class="bannerHeader container">
+      <div class="bannerHeaderContent">
+
+        <h2>Alef David</h2>
+        <p>Sou desenvolvedor Front-End, moro no Brasil.<br>
+          Ajudo pessoas e empresas a darem forma a seus projetos e ideias.
+        </p>
+        <div>
+          <button class="buttonBannerHeader">Vamos conversar</button>
+          <a href="" class="linkBannerHeader">Portifólio</a>
+        </div>
+
+      </div>
+
+      <div class="bannerHeaderImage">
+
+      </div>
+    </section>
+
   </header>

@@ -1,2 +1,70 @@
-.header {
+header {
+  background: rgb(41, 82, 117);
+  background: linear-gradient(
+    180deg,
+    rgba(41, 82, 117, 1) 0%,
+    rgba(126, 162, 194, 1) 100%
+  );
+  
+  .headerBar {
+    height: 10vh;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .logoBar {
+      cursor: pointer;
+    }
+
+    .navigationBar {
+      ul {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+      }
+      ul li {
+        list-style-type: none;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .bannerHeader {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .bannerHeaderContent {
+        color: white;
+
+        h2{
+            font-size: 45px;
+        }
+        p{
+            font-size: 18px;
+        }
+
+        button{
+            border: none;
+            border-radius: 20px;
+            background-color: bisque;
+            color: black;
+            padding: 10px 20px;
+            margin-right: 30px;
+            box-shadow: -3px 6px #4c6275;
+        }
+        button:hover{
+            transition: 0.3s;
+            background-color: #4c6275;
+            color: white;
+            box-shadow: none;
+        }
+
+    }
+  }
 }
