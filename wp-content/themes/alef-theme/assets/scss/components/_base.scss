@@ -5,15 +5,28 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: rgb(41, 82, 117);
+  background: linear-gradient(
+    180deg,
+    rgba(41, 82, 117, 1) 30%,
+    rgba(126, 162, 194, 1) 100%
+  );
 }
 
 body {
   position: relative;
 
-  &.page-template-termos-de-uso{
+  &.page-template-termos-de-uso {
     overflow-x: unset;
   }
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1,
@@ -25,20 +38,40 @@ h6 {
   line-height: 1.5em;
 }
 
-p {
-  line-height: 1.5em;
+h2 {
+  font-size: 70px;
+  font-weight: 900;
+  color: white;
+
+  @media (max-width: 1000px) {
+    font-size: 30px;
+  }
 }
 
-a{
+p {
+  color: white;
+  line-height: 1.5em;
+  font-size: 18px;
+  font-weight: 500;
+  width: 60%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+
+a {
   text-decoration: none;
   cursor: pointer;
   color: white;
 }
 
-a:hover, ul li:hover{
+a:hover,
+ul li:hover {
   color: #4c6275;
   transition: 0.3s;
-
 }
 
 img {

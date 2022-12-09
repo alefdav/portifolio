@@ -51,6 +51,11 @@ header('Content-Type: text/html; charset=utf-8');
 
   <link rel="manifest" href="<?php bloginfo('template_url') ?>/manifest.json">
 
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -61,49 +66,12 @@ header('Content-Type: text/html; charset=utf-8');
 <body <?php body_class(); ?>>
 
   <header>
-
     <section class="headerBar container">
-      <a href="https://www.linkedin.com/in/alefdav/">@alefdav</a>
+      <a href="https://www.linkedin.com/in/alefdav/" class="headerLink">@alefdav</a>
 
       <div class="navigationBar">
-        <ul>
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
+        <?php wp_nav_menu(); ?>
       </div>
-    </section>
-
-    <section class="bannerHeader container">
-      <div class="bannerHeaderContent">
-
-        <h2>Hi! I'm Alef David</h2>
-        <p> I have been working as a developer for 5 years, my specialty is creating responsive and accessible pages.
-          I have extensive experience with web development and its tools. My favorite stack is Javascript, PHP and its frameworks.</p>
-        <div class="bannerHeaderButton">
-          <button>Check my projects</button>
-          <a href="">..or see my resume</a>
-        </div>
-      </div>
-
-      <div class="bannerHeaderImage">
-
-      </div>
-    </section>
-
-    <section class="socialMedias">
-
-      <a href="https://www.linkedin.com/in/alefdav/" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="https://www.github.com/alefdav/" target="_blank">
-        <i class="bi bi-github"></i>
-      </a>
-
-      <a href="https://wa.me/5521967106432" target="_blank">
-        <i class="bi bi-whatsapp"></i>
-      </a>
-
     </section>
 
   </header>

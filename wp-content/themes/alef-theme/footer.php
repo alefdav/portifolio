@@ -1,6 +1,20 @@
 <footer id="footer" class="footer">
-  
+  <section class="socialMedias">
+
+    <a href="https://www.linkedin.com/in/alefdav/" target="_blank">
+      <i class="bi bi-linkedin"></i>
+    </a>
+    <a href="https://www.github.com/alefdav/" target="_blank">
+      <i class="bi bi-github"></i>
+    </a>
+
+    <a href="https://wa.me/5521967106432" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+
+  </section>
 </footer>
+
 
 <script>
   // function openMenu(){
@@ -15,7 +29,6 @@
   //       nav.style.display = "none";
   //     }
   //   }
-
 </script>
 
 <?php wp_footer(); ?>

@@ -7,7 +7,7 @@
     "prod": "webpack --config webpack.prod.js"
   },
   "repository": {
-    "type": "git"    
+    "type": "git"
   },
   "author": "",
   "license": "ISC",

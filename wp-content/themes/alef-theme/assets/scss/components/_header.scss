@@ -1,11 +1,4 @@
 header {
-  background: rgb(41, 82, 117);
-  background: linear-gradient(
-    180deg,
-    rgba(41, 82, 117, 1) 0%,
-    rgba(126, 162, 194, 1) 100%
-  );
-  
   .headerBar {
     height: 10vh;
     color: white;
@@ -15,7 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    a{
+    a {
       font-size: 20px;
       font-weight: 500;
     }
@@ -34,69 +27,21 @@ header {
         cursor: pointer;
       }
     }
-  }
 
-  .bannerHeader {
-    height: 70vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @media (max-width: 1000px) {
+      #menu-home {
+        padding: 0;
+      }
 
-    .bannerHeaderContent {
-        color: white;
-
-        h2{
-            font-size: 70px;
-            font-weight: 900;
+      .navigationBar {
+        ul li {
+          padding: 0 12px;
         }
-        p{
-            font-size: 18px;
-            font-weight: 500;
-            width: 60%;
-        }
+      }
 
-        button{
-            border: none;
-            border-radius: 20px;
-            background-color: bisque;
-            color: black;
-            padding: 10px 20px;
-            margin-right: 10px;
-            box-shadow: -3px 6px #4c6275;
-        }
-        button:hover{
-            transition: 0.3s;
-            background-color: #4c6275;
-            color: white;
-            box-shadow: none;
-        }
-
-        .bannerHeaderButton{
-          display: flex;
-          flex-direction: row;
-          width: 70%;
-
-          button{
-            
-          }
-          a{
-            margin: auto 0
-          }
-        }
-
-    }
-  }
-
-  .socialMedias{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    a{
-      padding: 0 15px;
-      
-      font-size: 50px;
+      .headerLink {
+        display: none;
+      }
     }
   }
 }

@@ -1,0 +1,37 @@
+.homeBody {
+  .homeContent {
+    button {
+      border: none;
+      border-radius: 20px;
+      background-color: bisque;
+      color: black;
+      padding: 10px 20px;
+      margin-right: 10px;
+      box-shadow: -3px 6px #4c6275;
+    }
+    button:hover {
+      transition: 0.3s;
+      background-color: #4c6275;
+      color: white;
+      box-shadow: none;
+    }
+
+    .homeButton {
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+
+      button {
+      }
+      a {
+        margin: auto 0;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .homeButton {
+        width: 100%;
+      }
+    }
+  }
+}
